@@ -8,7 +8,7 @@
             "name": "dart_lessons",
             "request": "launch",
             "type": "dart",
-            "program": "lib/command_line_app/lesson47.dart"
+            "program": "lib/dart_collections/lesson60.dart"
         }
     ]
 }
