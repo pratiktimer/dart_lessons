@@ -8,7 +8,7 @@
             "name": "dart_lessons",
             "request": "launch",
             "type": "dart",
-            "program": "lib/dart_collections/lesson71.dart"
+            "program": "lib/dart_processing/lesson77.dart"
         }
     ]
 }
