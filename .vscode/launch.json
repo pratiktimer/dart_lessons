@@ -8,7 +8,7 @@
             "name": "dart_lessons",
             "request": "launch",
             "type": "dart",
-            "program": "lib/dart_null_safety/lesson84.dart"
+            "program": "lib/dart_functions_basics/lesson94.dart"
         }
     ]
 }
