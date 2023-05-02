@@ -1,10 +1,14 @@
-typedef Great = String Function(String);
+// Function Types
+typedef Greet = String Function(String);
 
-sayNamaste(String name) => 'namster $name';
+String sayNamaste(String name) => 'namste $name';
 
-void main(){
-  welcome(sayNamaste,'pratik');
+String sayBonjour(String name) => 'Bonjour $name';
+void main() {
+  welcome(sayNamaste, 'pratik');
+  welcome(sayBonjour, 'pratik');
 }
-void welcome(Great great,String name){
-  print(great(name));
+
+void welcome(Greet greet, String name) {
+  print(greet(name));
 }
