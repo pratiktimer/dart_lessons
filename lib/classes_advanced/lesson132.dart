@@ -4,6 +4,7 @@ abstract class Shape {
   double get area;
   void printArea(double shape);
   double get perimeter;
+  void printAreaAndPerimeter(Shape shape);
 }
 
 class Square implements Shape {
@@ -15,10 +16,16 @@ class Square implements Shape {
   double get area => side * side;
 
   @override
-  void printArea(double value) => print('square area: - $value');
+  void printArea(double value) => print('$value');
 
   @override
   double get perimeter => 4 * side;
+
+  @override
+  void printAreaAndPerimeter(Shape shape) {
+    printArea(shape.area);
+    print(shape.perimeter);
+  }
 }
 
 class Circle implements Shape {
@@ -30,10 +37,16 @@ class Circle implements Shape {
   double get area => pi * r * r;
 
   @override
-  void printArea(double value) => print('circle area: -${value}');
+  void printArea(double value) => print('${value}');
 
   @override
   double get perimeter => 2 * pi * r;
+
+  @override
+  void printAreaAndPerimeter(Shape shape) {
+    printArea(shape.area);
+    print(shape.perimeter);
+  }
 }
 
 void main() {

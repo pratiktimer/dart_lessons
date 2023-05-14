@@ -9,7 +9,7 @@
             "name": "dart_lessons",
             "request": "launch",
             "type": "dart",
-            "program": "lib/classes_advanced/lesson132.dart"
+            "program": "lib/mixins_and_extension/lesson154.dart"
         }
     ]
 }
