@@ -1,4 +1,6 @@
-import 'package:coronavirus/app/services/api_keys.dart';
+import 'package:flutter/foundation.dart';
+
+import 'api_keys.dart';
 
 enum Endpoint {
   cases,
@@ -7,17 +9,12 @@ enum Endpoint {
   deaths,
   recovered,
 }
-// abstract class API {
-//   String get apiKey;
-//   Uri tokenUri();
-//   Uri endpointUri(Endpoint endpoint);
-// }
 
 class API {
   API({required this.apiKey});
   final String apiKey;
 
-  factory API.sandbox() => API(apiKey: APIKeys.ncovSandBoxKey);
+  factory API.sandbox() => API(apiKey: APIKeys.ncovSandboxKey);
 
   static final String host = 'ncov2019-admin.firebaseapp.com';
 
@@ -33,7 +30,7 @@ class API {
         path: _paths[endpoint],
       );
 
-  static final Map<Endpoint, String> _paths = {
+  static Map<Endpoint, String> _paths = {
     Endpoint.cases: 'cases',
     Endpoint.casesSuspected: 'casesSuspected',
     Endpoint.casesConfirmed: 'casesConfirmed',
